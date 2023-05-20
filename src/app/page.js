@@ -186,6 +186,7 @@ export default function Home() {
       });
       connectWallet();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [walletConnected]);
 
   return (
@@ -193,12 +194,17 @@ export default function Home() {
       <Head>
         <title>Whitelist Dapp</title>
         <meta name="description" content="Whitelist-Dapp" />
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          href="/ethFavicon.png"
+          type="image/png"
+          sizes="16x16"
+        />
       </Head>
       <div className={styles.main}>
         <div>
           <h1 className={styles.title}>
-            Welcome to Thiluxan's Web3.0 Whitelist!
+            Welcome to Thiluxan&#39;s Web3.0 Whitelist!
           </h1>
           <div className={styles.description}>
             {/* Using HTML Entities for the apostrophe */}
